@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Contacto | Correo COR</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <meta name="description" content="Esta es la página de la empresa logistica Correo COR, en esta seccion se van a poder comunicar con nosotros mediante un formulario">
+        <meta name="keywords" content="logistica, correo, paquetería, postal, sucursales">
+        <link href="../assets/css/estilos.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <header class="header"> <!-- Inicio de Encabezado de la pagina web -->
+            <nav class="navbar navbar-expand-lg navbar-light"> <!--Inicio Menu de Navegacion-->
+                <a class="navbar-brand" href="../index.html"><img src="../multimedia/Logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" justify-content=>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav> <!--Fin Menu de Navegacion-->
+        </header> <!--Fin Encabezado de la pagina web-->
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="container">
+                <!-- Page Heading/Breadcrumbs-->
+                <h1>
+                    Atencion al Cliente
+                </h1>
+                <!-- Content Row-->
+                <div class="row">
+                    <!-- Map Column-->
+                    <div class="col-lg-8 mb-4">
+                        <!-- Embedded Google Map-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6809.402224821719!2d-64.17246406906882!3d-31.422359973944346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1618877656305!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- Contact Details Column-->
+                    <div class="col-lg-4 mb-4">
+                        <h3>Datos de Contacto</h3>
+                        <p>
+                            Av. Los Paraisos 456
+                            <br />
+                            Buenos Aires CP 1428
+                            <br />
+                        </p>
+                        <p>
+                            <abbr title="Telefono">Telefono</abbr>
+                            : (11) 4546-7890
+                        </p>
+                        <p>
+                            <abbr title="Email">Mail</abbr>
+                            :
+                            <a href="contacto@correocor.com.ar">contacto@correocor.com.ar</a>
+                        </p>
+                        <p>
+                            <abbr title="Hours">Horario</abbr>
+                            : Lunes - Viernes: 9:00 a 18:00
+                            <br />
+                            Sabados: 9:00 a 13:00
+                        </p>
+                    </div>
+                </div>
+                <!-- Contact Form-->
+                <div class="row">
+                    <div class="col-lg-8 mb-4">
+                        <h3>En CORREO COR nos interesa conocer sus opiniones</h3>
+                        <form id="contactForm" name="sentMessage" novalidate>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Nombre Completo:</label>
+                                    <input class="form-control" id="name" type="text" required data-validation-required-message="Please enter your name." />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Telefono:</label>
+                                    <input class="form-control" id="phone" type="tel" required data-validation-required-message="Please enter your phone number." />
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Email:</label>
+                                    <input class="form-control" id="email" type="email" required data-validation-required-message="Please enter your email address." />
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Mensaje:</label>
+                                    <textarea class="form-control" id="message" rows="10" cols="100" required data-validation-required-message="Please enter your message" maxlength="999" style="resize: none"></textarea>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <!-- For success/fail messages-->
+                            <button class="btn btn-primary" id="sendMessageButton" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="pieDePagina" class="py-5">
+            <div class="container">
+                <div class="pieDePagina__firma">
+                    <p>Atencion al cliente</p>
+                    <p>consulta@correocor.com.ar</p>
+                    <p>2021 - Correo COR</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Contact form JavaScript-->
+        <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the assets/mail/contact_me.php file.-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+    </body>
+</html>

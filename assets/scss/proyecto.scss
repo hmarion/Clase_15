@@ -1,0 +1,168 @@
+/* Import */
+@import "querys";
+
+/* Variables */
+$color1: #214785;
+$color2: #66BDCC;
+
+/* Mixins */
+@mixin formato($fondo, $letra){
+    background-color: $fondo;
+    color: $letra;
+}
+
+/* BEM */
+/* Bloque - Padre */
+.header {
+    background-color: $color1;
+}
+
+.menuPrincipal{
+    width: 100%;
+    height: 100 vh;
+}
+
+.pieDePagina{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: $color1;
+    align-items: center;
+    position: absolute;
+}
+
+.tituloPrincipal{
+    font-size: 2rem;
+    color: $color2;
+    text-transform: uppercase;
+    text-decoration: underline $color2;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.colorSeccion{
+    @include formato($color2, $color1);
+    text-align: center;
+}
+
+.grillaQuienesSomos{
+    text-align: center;
+}
+
+/* Elementos - Hijos de Bloque */
+.header__navBar{
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    margin: 5px;
+    font-size: 0;
+}
+
+.header__navBar__listas{
+    width: 100%;
+    font-size: 20%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.pieDePagina__firma{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    align-items: center;
+}
+
+.tituloPrincipal__sucursales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.tituloPrincipal__sucursales{
+    div{
+        text-align: center;
+        margin: 10px 5px;
+    }
+    div:hover{
+        background-color: $color2;
+    }
+}
+
+.tituloPrincipal__sucursalesBorde{
+    border: solid;
+    margin: 10px;
+}
+
+.grillaQuienesSomos__quienesSomos{
+    grid-area: quienesSomos;
+}
+
+.grillaQuienesSomos__historia{
+    grid-area: historia;
+    margin: 5px;
+    border: double;
+}
+
+.grillaQuienesSomos__videoHistoria{
+    grid-area: videoHistoria;
+    margin: 5px;
+    border: double;
+    text-align: left;
+}
+
+.grillaQuienesSomos__mision{
+    grid-area: mision;
+    margin: 5px;
+    border: double;
+}
+
+.grillaQuienesSomos__sucursales{
+    grid-area: sucursales;
+    margin: 5px;
+    border: double;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Modificadores */
+.colorSeccion--color2{
+    @include formato($color1, $color2);
+    text-align: center;
+}
+
+/* Anidamiento */
+ul{
+    li{
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+section{
+    div{
+        p{
+            font-size: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+        }
+    }
+}
+
+.scala:hover{
+    transform: scale(2, 2);
+}
+
+/* Estilos del Theme */
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+

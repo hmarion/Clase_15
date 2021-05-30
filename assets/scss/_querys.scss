@@ -1,0 +1,49 @@
+/* Media Queries */
+/* MOBILE */
+@media (max-width: 767px){
+    section div p{
+        font-size: 1rem;
+    }
+
+    .grillaQuienesSomos__videoHistoria{
+        display: none;
+    }
+
+    .grillaQuienesSomos{
+        display: grid;
+        grid-template-areas: 
+        "quienesSomos quienesSomos"
+        "mision historia"
+        "sucursales sucursales";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 5% 2fr 5%;
+    }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1200px){
+    .grillaQuienesSomos{
+        display: grid;
+        grid-template-areas: 
+        "quienesSomos quienesSomos quienesSomos "
+        "mision historia historia "
+        "mision videoHistoria videoHistoria "
+        "mision sucursales sucursales";
+        grid-template-columns: 30% 2fr 1fr; 
+        grid-template-rows: 10% 2fr 1fr 10%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px){
+    .grillaQuienesSomos{
+        display: grid;
+        grid-template-areas: 
+        "quienesSomos quienesSomos quienesSomos "
+        "mision historia historia "
+        "mision videoHistoria videoHistoria "
+        "mision sucursales sucursales";
+        grid-template-columns: 20% 2fr 1fr;
+        grid-template-rows: 10% 2fr 1fr 10%;
+    }
+}
