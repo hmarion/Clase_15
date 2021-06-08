@@ -1,3 +1,3 @@
-Pagina CORREO COR Version 1.0
+Pagina CORREO    COR Version 1.0
 
-# Clase_15
+Alumno: Hector Eduardo Marion
