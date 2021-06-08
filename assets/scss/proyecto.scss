@@ -4,6 +4,7 @@
 /* Variables */
 $color1: #214785;
 $color2: #66BDCC;
+$letraPrincipal: 'Roboto', sans-serif;
 
 /* Mixins */
 @mixin formato($fondo, $letra){
@@ -36,7 +37,7 @@ $color2: #66BDCC;
     color: $color2;
     text-transform: uppercase;
     text-decoration: underline $color2;
-    font-family: 'Roboto', sans-serif;
+    font-family: $letraPrincipal;
     text-align: center;
 }
 
@@ -50,24 +51,9 @@ $color2: #66BDCC;
 }
 
 /* Elementos - Hijos de Bloque */
-.header__navBar{
-    display: flex;
-    justify-content: flex-end;
-    height: 10%;
-    margin: 5px;
-    font-size: 0;
-}
-
-.header__navBar__listas{
-    width: 100%;
-    font-size: 20%;
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-}
-
 .pieDePagina__firma{
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: $letraPrincipal;
     font-weight: bold;
     align-items: center;
 }
@@ -147,7 +133,7 @@ section{
     div{
         p{
             font-size: 100%;
-            font-family: 'Roboto', sans-serif;
+            font-family: $letraPrincipal;
             color: black;
         }
     }
@@ -159,10 +145,9 @@ section{
 
 /* Estilos del Theme */
 .py-5 {
-    padding-top: 3rem !important;
+    padding-top: 3rem;
 }
 
 .form-group {
   margin-bottom: 1rem;
 }
-

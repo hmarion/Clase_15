@@ -52,7 +52,7 @@
   color: #66BDCC;
   text-transform: uppercase;
   text-decoration: underline #66BDCC;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center; }
 
 .colorSeccion {
@@ -64,22 +64,9 @@
   text-align: center; }
 
 /* Elementos - Hijos de Bloque */
-.header__navBar {
-  display: flex;
-  justify-content: flex-end;
-  height: 10%;
-  margin: 5px;
-  font-size: 0; }
-
-.header__navBar__listas {
-  width: 100%;
-  font-size: 20%;
-  font-family: 'Roboto', sans-serif;
-  list-style-type: none; }
-
 .pieDePagina__firma {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   align-items: center; }
 
@@ -141,7 +128,7 @@ ul li a {
 
 section div p {
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black; }
 
 .scala:hover {
@@ -149,7 +136,7 @@ section div p {
 
 /* Estilos del Theme */
 .py-5 {
-  padding-top: 3rem !important; }
+  padding-top: 3rem; }
 
 .form-group {
   margin-bottom: 1rem; }
