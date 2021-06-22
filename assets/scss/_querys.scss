@@ -12,12 +12,14 @@
     .grillaQuienesSomos{
         display: grid;
         grid-template-areas: 
-        "quienesSomos quienesSomos"
-        "mision historia"
-        "sucursales sucursales";
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 5% 2fr 5%;
+        "quienesSomos "
+        "mision "
+        "historia "
+        "sucursales";
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 0.8fr 1fr 5%;
     }
+
 }
 
 /* TABLET */
@@ -32,6 +34,7 @@
         grid-template-columns: 30% 2fr 1fr; 
         grid-template-rows: 10% 2fr 1fr 10%;
     }
+
 }
 
 /* DESKTOP */
@@ -44,6 +47,12 @@
         "mision videoHistoria videoHistoria "
         "mision sucursales sucursales";
         grid-template-columns: 20% 2fr 1fr;
-        grid-template-rows: 10% 2fr 1fr 10%;
+        grid-template-rows: 10% 1.5fr 1fr 10%;
+    }
+
+    .content{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

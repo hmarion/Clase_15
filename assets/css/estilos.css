@@ -8,9 +8,9 @@
     display: none; }
   .grillaQuienesSomos {
     display: grid;
-    grid-template-areas: "quienesSomos quienesSomos" "mision historia" "sucursales sucursales";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 5% 2fr 5%; } }
+    grid-template-areas: "quienesSomos " "mision " "historia " "sucursales";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 0.8fr 1fr 5%; } }
 
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -26,9 +26,12 @@
     display: grid;
     grid-template-areas: "quienesSomos quienesSomos quienesSomos " "mision historia historia " "mision videoHistoria videoHistoria " "mision sucursales sucursales";
     grid-template-columns: 20% 2fr 1fr;
-    grid-template-rows: 10% 2fr 1fr 10%; } }
+    grid-template-rows: 10% 1.5fr 1fr 10%; }
+  .content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; } }
 
-/* Variables */
 /* Mixins */
 /* BEM */
 /* Bloque - Padre */
@@ -98,13 +101,14 @@
 
 .grillaQuienesSomos__videoHistoria {
   grid-area: videoHistoria;
+  justify-content: center;
   margin: 5px;
-  border: double;
-  text-align: left; }
+  border: double; }
 
 .grillaQuienesSomos__mision {
   grid-area: mision;
   margin: 5px;
+  padding: 10px;
   border: double; }
 
 .grillaQuienesSomos__sucursales {
@@ -128,6 +132,7 @@ ul li a {
 
 section div p {
   font-size: 100%;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   color: black; }
 

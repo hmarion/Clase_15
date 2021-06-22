@@ -1,10 +1,6 @@
 /* Import */
 @import "querys";
-
-/* Variables */
-$color1: #214785;
-$color2: #66BDCC;
-$letraPrincipal: 'Roboto', sans-serif;
+@import "variables";
 
 /* Mixins */
 @mixin formato($fondo, $letra){
@@ -93,14 +89,15 @@ $letraPrincipal: 'Roboto', sans-serif;
 
 .grillaQuienesSomos__videoHistoria{
     grid-area: videoHistoria;
+    justify-content: center;
     margin: 5px;
     border: double;
-    text-align: left;
 }
 
 .grillaQuienesSomos__mision{
     grid-area: mision;
     margin: 5px;
+    padding: 10px;
     border: double;
 }
 
@@ -133,6 +130,7 @@ section{
     div{
         p{
             font-size: 100%;
+            text-align: center;
             font-family: $letraPrincipal;
             color: black;
         }
